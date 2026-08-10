@@ -6,7 +6,14 @@
 
 //couleur d'un rayon
 color ray_color(const ray& r){
-    return color(0,0,0);
+    //standard graphics trick to linearly scale 0.0 <= a <= 1.0
+    //when a = 1 -> blue, a = 0 -> white
+    //linear blend/interpolation
+    //blendedValue = (1-a) * startValue + a * endValue
+
+    vec3 unit_direction = unit_vector(r.direction());
+    auto a = 0.5*(unit_direction.y() + 1.0);
+    return (1.0-a) * color(1.0,1.0, 1.0) + a*color(0.5, 0.7, 1.0);
 }
 
 int main() {
