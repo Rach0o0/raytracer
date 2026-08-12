@@ -38,4 +38,6 @@ t = (-b +- sqrt(b^2 - 4ac) )/ 2a
 
 SHADING 
 - we need normal to shade : vector that is perpendicular to the surface at the point of intersection (normal vectors will be of unit length)
+- la normale on peut la faire pointer fans deux directions opposées : toujours vers l'exterieur de l'objet, toujours contre le rayon 
+--> pointera toujours contre le rayon 
 
