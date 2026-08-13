@@ -1,4 +1,9 @@
-1. Sending rays into the scene
+COMPILATION : 
+./run.sh
+eog images/output.ppm
+
+
+SENDING RAYS INTO THE SCENE : 
 
 Setps are : 
 - Calculate the ray from the "eye" through the pixel
@@ -41,3 +46,17 @@ SHADING
 - la normale on peut la faire pointer fans deux directions opposées : toujours vers l'exterieur de l'objet, toujours contre le rayon 
 --> pointera toujours contre le rayon 
 
+ANTIALIASING : 
+- if we zoon into the rendered images, notice harsh "stair step" nature of edges --> aliasing
+- true image is continuous (infinite resolution)
+- get the same effect by averaging a bunch of samples for each pixel
+- point sampling : single ray through the center of each pixel 
+- we want to integrate the light falling on a particular region of our rendered image
+- sampling the square region centered at the pixel that extends halfway to each of the four neighboring pixels (simplest model)
+
+DIFFUSE MATERIALS : 
+- realistic looking materials 
+- diffuse materials (matte)
+- diffuse objects take on the color of their surroundings, but they modulate that with their own intrinsic color
+- light that reflects off a diffuse surface has its direction randomized
+- might be absorbed (darker surface)
