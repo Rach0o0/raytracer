@@ -63,3 +63,12 @@ DIFFUSE MATERIALS :
 - emet pas de lumière, prend la couleur de ce qui l'entoure, quand un rayon la frappe, repart dans une direction au hasard, lumière dispersée dans tous les sens et peut etre absorbé
 - pour savoir si un point doit etre clair ou sombre, il faut savoir combien de lumière lui arrive 
 - rayon part de la caméra, touche la sphère, repart dans une direction au hasard 
+
+LAMBERTIAN : 
+- avant quand un rayon rebondissait, toutes les directions avaient la même chance d'être choisies
+- maintenant, les directions proches de la normale sont favorisées, le rayon a plus de chances de repartir droit vers le haut qu'en rasant la surface (distribution de Lambert)
+
+GAMMA : 
+- sans gamma, le visionneur d'image (eog) ne prend pas les valeurs telles quelles, suppose qu'elles ont subi une transformation avant d'être enregistrées, donc applique la transformation inverse en les affichant
+- les images sont stockés en espace gamma 
+- donc faut faire l'approximation (racine carrée)
