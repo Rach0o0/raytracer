@@ -60,3 +60,6 @@ DIFFUSE MATERIALS :
 - diffuse objects take on the color of their surroundings, but they modulate that with their own intrinsic color
 - light that reflects off a diffuse surface has its direction randomized
 - might be absorbed (darker surface)
+- emet pas de lumière, prend la couleur de ce qui l'entoure, quand un rayon la frappe, repart dans une direction au hasard, lumière dispersée dans tous les sens et peut etre absorbé
+- pour savoir si un point doit etre clair ou sombre, il faut savoir combien de lumière lui arrive 
+- rayon part de la caméra, touche la sphère, repart dans une direction au hasard 
