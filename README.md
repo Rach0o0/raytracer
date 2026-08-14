@@ -72,3 +72,10 @@ GAMMA :
 - sans gamma, le visionneur d'image (eog) ne prend pas les valeurs telles quelles, suppose qu'elles ont subi une transformation avant d'être enregistrées, donc applique la transformation inverse en les affichant
 - les images sont stockés en espace gamma 
 - donc faut faire l'approximation (racine carrée)
+
+MATERIALS :
+- tous les matériau répondent à la même question via scatter : quelle direction le rayon repart (scattered), combien de couleur il garde (attenuation), absorbé ou pas (return true/ false)
+- albedo : la couleur que garde la surface 
+- lambertian : mat qu'on a deja : direction = normale + vecteur aléatoire
+- metal : miroir, le rayon rebondit comme une balle de billard : angle de sortie est symétrique de l'angle d'entrée
+- flou du metal (fuzz) : décalant légèrement la direction réfléchie au hasard
