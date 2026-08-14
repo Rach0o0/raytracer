@@ -79,3 +79,11 @@ MATERIALS :
 - lambertian : mat qu'on a deja : direction = normale + vecteur aléatoire
 - metal : miroir, le rayon rebondit comme une balle de billard : angle de sortie est symétrique de l'angle d'entrée
 - flou du metal (fuzz) : décalant légèrement la direction réfléchie au hasard
+- glass (dielectrics) : transparent (verre, eau, diamant)
+- on peut pas dédoubler à chaque impact, tirer à pile ou face à chaque impact (reflete ou refracte)
+- refraction : indice de réfraction,ce qui compte c'est le rapport entre deux milieux (loi de Snell)
+
+BLUR : 
+- caméra = sténopé (trou infiniment petit)
+- tous les rayons partent du même point lookfrom, mais aucun appareil photo réel ne fait ça
+- un vrai appareil a besoin d'un gros pour capter assez de lumière , on y ajoute donc une lentille qui rassemble en un seul point du capteur tous les rayons qui viennent d'un même point, à condition que ce point soit à la bonne distance (focus distance)
